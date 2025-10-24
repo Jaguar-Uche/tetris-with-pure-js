@@ -1,0 +1,74 @@
+body{
+  font-family: 'MyFont';
+  text-align: center;
+  font-size: 22px;
+  background-color: #222;
+}
+
+#gameContainer{
+  text-align: center;
+  position: relative;
+}
+
+#shapeContext {
+  position: fixed;
+  top: 50%;
+  left: 5%; /* Horizontal position on the screen */
+  transform: translateY(-50%);
+  width: 200px;
+  height: 200px;
+}
+
+
+#scoreBox {
+  position: fixed;
+  top: 50%;
+  right: 5%; /* Opposite side of shapeContext */
+  transform: translateY(-50%);
+  width: 200px;
+  height: 200px;
+  background-color: aquamarine;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+
+#mainBody{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.restart-button {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  font-size: 20px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.context{
+  border: 5px solid black;
+  background-color: burlywood;
+}
+
+.btn{
+  font-size: 22px;
+  width: 100px;
+  height: 50px;
+  border: 4px solid;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-family: 'MyFont';
+}
+
+@font-face {
+  font-family: 'MyFont';
+  src: url('./font/PermanentMarker-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}

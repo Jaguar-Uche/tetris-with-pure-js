@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tetris</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+<div id="mainBody">
+  <div id="nextShape">
+    <canvas id="shapeContext" width="200px" height="200px"></canvas>
+  </div>
+  <div id="gameContainer">
+
+    <canvas id="gameContext" class="context" width="500px" height="500px"></canvas>
+
+    <div>
+      <button id="pause" class="btn">Pause</button>
+      <button id="restart" class="btn">Restart</button>
+    </div>
+    
+  </div>
+  
+    <div id="scoreBox">
+      <p id="scoreText">Score: <span id="score">0</span></p>
+      <p id="gameTime">Time: 00:00:00</p>
+    </div>
+  
+
+</div>
+
+  <script type="module" src="timer.js"></script>
+  <script type="module" src="functions.js"></script>
+  <script type="module" src="index.js"></script>
+
+  <script type="module" src="shapes/I.js"></script>
+  <script type="module" src="shapes/I2.js"></script>
+
+  <script type="module" src="shapes/O.js"></script>
+
+  <script type="module" src="shapes/J.js"></script>
+  <script type="module" src="shapes/J1.js"></script>
+  <script type="module" src="shapes/J2.js"></script>
+  <script type="module" src="shapes/J4.js"></script>
+
+  <script type="module" src="shapes/L.js"></script>
+  <script type="module" src="shapes/L1.js"></script>
+  <script type="module" src="shapes/L2.js"></script>
+  <script type="module" src="shapes/L4.js"></script>
+
+  <script type="module" src="shapes/S.js"></script>
+  <script type="module" src="shapes/S2.js"></script>
+
+  <script type="module" src="shapes/Z.js"></script>
+  <script type="module" src="shapes/Z2.js"></script>
+
+  <script type="module" src="shapes/T.js"></script>
+  <script type="module" src="shapes/T1.js"></script>
+  <script type="module" src="shapes/T2.js"></script>
+  <script type="module" src="shapes/T4.js"></script>
+  
+</body>
+</html>
